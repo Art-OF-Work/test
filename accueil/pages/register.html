@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créer un compte - CliniSys</title>
+  <meta name="description" content="Créez un compte pour accéder à notre application de gestion de clinique.">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image" href="images/logo.png">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="images/logo.png" alt="CliniSys">
+            <span>CliniSys</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="register.html" class="active">Créer compte</a></li>
+            <li><a href="login.html">Se connecter</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contacter</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Créer un compte</h1>
+        <p>Complétez le formulaire ci-dessous pour créer votre compte CliniSys</p>
+      </div>
+    </section>
+
+    <section class="register-section">
+      <div class="container">
+        <div class="form-container">
+          <form id="registerForm" class="form" novalidate>
+            <div class="form-group">
+              <label for="lastName" class="form-label">Nom <span class="required">*</span></label>
+              <input type="text" id="lastName" name="lastName" class="form-input" required>
+              <div class="error-message" id="lastNameError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="firstName" class="form-label">Prénom <span class="required">*</span></label>
+              <input type="text" id="firstName" name="firstName" class="form-input" required>
+              <div class="error-message" id="firstNameError"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Sexe <span class="required">*</span></label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="homme" required>
+                  <span class="radio-text">Homme</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="femme">
+                  <span class="radio-text">Femme</span>
+                </label>
+              </div>
+              <div class="error-message" id="genderError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="cin" class="form-label">Numéro de la carte nationale d'identité (CIN) <span class="required">*</span></label>
+              <input type="text" id="cin" name="cin" class="form-input" required>
+              <div class="error-message" id="cinError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="birthdate" class="form-label">Date de naissance <span class="required">*</span></label>
+              <input type="text" id="birthdate" name="birthdate" class="form-input" placeholder="JJ/MM/AAAA" required>
+              <div class="error-message" id="birthdateError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Adresse Gmail <span class="required">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" required>
+              <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="form-label">Mot de passe <span class="required">*</span></label>
+              <div class="password-input-container">
+                <input type="password" id="password" name="password" class="form-input" required>
+                <button type="button" class="toggle-password" aria-label="Afficher/masquer le mot de passe">
+                  <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <div class="error-message" id="passwordError"></div>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">S'inscrire</button>
+            </div>
+
+            <div class="form-footer">
+              <p>Vous avez déjà un compte? <a href="login.html">Se connecter</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="images/logo.png" alt="CliniSys">
+            <span>CliniSys</span>
+          </a>
+          <p>Une solution moderne et simple pour gérer votre clinique au quotidien.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="register.html">Créer compte</a></li>
+              <li><a href="login.html">Se connecter</a></li>
+              <li><a href="about.html">À propos</a></li>
+              <li><a href="contact.html">Contacter</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Ressources</h3>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Centre d'aide</a></li>
+              <li><a href="#">Tutoriels vidéo</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Mentions légales</h3>
+            <ul>
+              <li><a href="#">Conditions d'utilisation</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Mentions légales</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ClinicSoft. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/register.js"></script>
+</body>
+</html>

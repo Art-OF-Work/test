@@ -1,0 +1,14 @@
+{
+  "name": "clinic-management-system",
+  "version": "1.0.0",
+  "description": "Clinic Management System with Frontend and Backend",
+  "scripts": {
+    "dev": "concurrently \"cd accueil && npm run dev\" \"cd back-end && npm run dev\"",
+    "install-all": "concurrently \"cd accueil && npm install\" \"cd back-end && npm install\""
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "concurrently": "^8.2.2"
+  }
+}
